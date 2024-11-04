@@ -1,0 +1,51 @@
+.header-principal{
+    padding-top: 37px;
+    margin-bottom: 100px;
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 36px;
+            font-family: $merriweather;
+            color: $pink;
+            span{
+                font-size: 36px;
+                font-family: $merriweather;
+                color: $white;
+            }
+        }
+        .menu-header{
+            margin-right: 10%;
+            ul{
+                display: flex;
+                gap: 38px;
+                @include breakpoint(desktopxxl){
+                    gap: 48px;
+                }
+                li{
+                    position: relative;
+                    &:hover{
+                        a{
+                            color: $white;
+                        }
+                        img{
+                            display: block;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: $silver;
+                    }
+                    img{
+                        position: absolute;
+                        bottom: -10%;
+                        left: 0;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

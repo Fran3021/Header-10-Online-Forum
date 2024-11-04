@@ -1,0 +1,15 @@
+html * {
+    font-family: $poppins;
+    color: white;
+}
+
+body{
+    background-color: $background-color;
+    background-image: url(../../icons/circles-background.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+    @include breakpoint(desktopxxl){
+        background-position-y: 300px;
+    }
+}

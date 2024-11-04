@@ -1,0 +1,17 @@
+.container-header{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(desktopxxl){
+        max-width: 85%;
+    }
+}
+
+.container-main{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(desktopxxl){
+        max-width: 85%;
+    }
+}

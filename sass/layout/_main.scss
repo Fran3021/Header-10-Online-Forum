@@ -1,0 +1,160 @@
+.main-principal{
+    .container-main{
+        display: flex;
+        .hero-left{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 30px;
+            padding-top: 60px;
+            @include breakpoint(desktopxxl){
+                gap: 40px;
+            }
+            h1{
+                font-family: $merriweather;
+                font-size: 60px;
+                @include breakpoint(desktopxxl){
+                    font-size: 82px;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: $silver;
+                width: 80%;
+                @include breakpoint(desktopxxl){
+                    font-size: 24px;
+                }
+            }
+            .button-link{
+                display: flex;
+                gap: 30px;
+                margin-bottom: 80px;
+                @include breakpoint(desktopxxl){
+                    margin-bottom: 100px
+                }
+                .button{
+                    @include button;
+                }
+                .link{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: 600;
+                    color: $white;
+                    font-size: 15px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+            .informations{
+                display: flex;
+                gap: 30px;
+                .build{
+                    display: flex;
+                    align-items: center;
+                    width: 25%;
+                    gap: 10px;
+                    @include breakpoint(desktopxxl){
+                        gap: 20px;
+                    }
+                    img{
+                        background-color: #464751;
+                        padding: 8px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 15px;
+                        color: $white;
+                        font-weight: 600;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .share{
+                    display: flex;
+                    align-items: center;
+                    width: 20%;
+                    gap: 10px;
+                    @include breakpoint(desktopxxl){
+                        gap: 20px;
+                    }
+                    img{
+                        background-color: #464751;
+                        padding: 8px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 15px;
+                        color: $white;
+                        font-weight: 600;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .get{
+                    display: flex;
+                    align-items: center;
+                    width: 25%;
+                    gap: 10px;
+                    @include breakpoint(desktopxxl){
+                        gap: 20px;
+                    }
+                    img{
+                        background-color: #464751;
+                        padding: 8px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 15px;
+                        color: $white;
+                        font-weight: 600;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-right{
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+            @include breakpoint(desktopxxl){
+                column-gap: 20px;
+            }
+            img{
+                width: 90%;
+                @include breakpoint(desktopxxl){
+                    width: 100%;
+                }
+            }
+            .image-1{
+                grid-column: 1 / span 1;
+                grid-row: 1 / span 2;
+            }
+            .image-2{
+                grid-column: 1 / span 1;
+                grid-row: 3 / span 1;
+            }
+            .image-3{
+                grid-column: 2 / span 1;
+                grid-row: 1 / span 1;
+            }
+            .image-4{
+                grid-column: 2 / span 1;
+                grid-row: 2 / span 2;
+            }
+            .image-5{
+                grid-column: 3 / span 1;
+                grid-row: 1 / span 3;
+            }
+        }
+    }
+}
