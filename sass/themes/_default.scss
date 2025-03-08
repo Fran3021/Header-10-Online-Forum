@@ -1,15 +1,16 @@
-html * {
-    font-family: $poppins;
-    color: white;
+@use '../abstracts/abstracts' as abs;
+
+html *{
+    font-family: abs.$poppins;
 }
 
 body{
-    background-color: $background-color;
-    background-image: url(../../icons/circles-background.png);
+    background-color: abs.$dark-blue;
+    background-image: url("/icons/icon-ellipse.svg");
     background-repeat: no-repeat;
-    background-position: right bottom;
     background-size: 50%;
-    @include breakpoint(desktopxxl){
-        background-position-y: 300px;
+    background-position: bottom right;
+    @include abs.breakpoint(desktopxxl){
+        background-position-y: 150%;
     }
 }

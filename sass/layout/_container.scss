@@ -1,17 +1,25 @@
-.container-header{
+@use '../abstracts/abstracts' as abs;
+@use '../base/base' as base;
+@use '../components/components' as comp;
+
+.container-header-principal{
     max-width: 90%;
-    margin-left: auto;
     margin-right: auto;
-    @include breakpoint(desktopxxl){
+    margin-left: auto;
+    @include abs.breakpoint(desktopxxl){
         max-width: 85%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
-.container-main{
+.container-main-principal{
     max-width: 90%;
-    margin-left: auto;
     margin-right: auto;
-    @include breakpoint(desktopxxl){
+    margin-left: auto;
+    @include abs.breakpoint(desktopxxl){
         max-width: 85%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }

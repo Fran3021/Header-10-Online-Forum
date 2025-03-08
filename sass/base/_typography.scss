@@ -1,0 +1,40 @@
+//fuentes de la pagina
+@font-face {
+    font-family: 'Merriweather 48pt';
+    src: url('/fonts/Merriweather48pt-Bold.eot');
+    src: url('/fonts/Merriweather48pt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Merriweather48pt-Bold.woff2') format('woff2'),
+        url('/fonts/Merriweather48pt-Bold.woff') format('woff'),
+        url('/fonts/Merriweather48pt-Bold.ttf') format('truetype'),
+        url('/fonts/Merriweather48pt-Bold.svg#Merriweather48pt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.eot');
+    src: url('/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('/fonts/Poppins-Regular.woff') format('woff'),
+        url('/fonts/Poppins-Regular.ttf') format('truetype'),
+        url('/fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.eot');
+    src: url('/fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('/fonts/Poppins-SemiBold.woff') format('woff'),
+        url('/fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('/fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

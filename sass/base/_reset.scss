@@ -1,3 +1,5 @@
+@use '../abstracts/abstracts' as abs;
+
 * {
   padding: 0;
   margin: 0;
@@ -5,5 +7,5 @@
 }
 
 * ul{
-  @include reset-list;
+  @include abs.reset-list;
 }

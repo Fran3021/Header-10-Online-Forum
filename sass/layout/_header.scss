@@ -1,48 +1,70 @@
+@use '../abstracts/abstracts' as abs;
+@use '../base/base' as base;
+@use '../components/components' as comp;
+
 .header-principal{
-    padding-top: 37px;
-    margin-bottom: 100px;
-    .container-header{
+    padding-top: 30px;
+    margin-bottom: 77px;
+    @include abs.breakpoint(desktopxxl){
+        padding-top: 37px;
+        margin-bottom: 101px;
+    }
+    .container-main-principal{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h2{
-            font-size: 36px;
-            font-family: $merriweather;
-            color: $pink;
-            span{
+        .title-web{
+            font-family: abs.$merri;
+            font-weight: bold;
+            font-size: 30px;
+            color: abs.$pink;
+            text-decoration: none;
+            padding-bottom: 15px;
+            @include abs.breakpoint(desktopxxl){
                 font-size: 36px;
-                font-family: $merriweather;
-                color: $white;
+            }
+            span{
+                color: abs.$white;
+                font-family: abs.$merri;
+                font-weight: bold;
+                @include abs.breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
             }
         }
         .menu-header{
             margin-right: 10%;
             ul{
                 display: flex;
-                gap: 38px;
-                @include breakpoint(desktopxxl){
+                gap: 40px;
+                @include abs.breakpoint(desktopxxl){
                     gap: 48px;
                 }
                 li{
+                    padding-bottom: 15px;
                     position: relative;
-                    &:hover{
-                        a{
-                            color: $white;
-                        }
-                        img{
-                            display: block;
-                        }
-                    }
                     a{
                         text-decoration: none;
-                        font-size: 18px;
-                        color: $silver;
-                    }
-                    img{
-                        position: absolute;
-                        bottom: -10%;
-                        left: 0;
-                        display: none;
+                        font-size: 15px;
+                        color: abs.$silver;
+                        @include abs.breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                        &:hover{
+                            color: abs.$white;
+                            &::after{
+                                content: url('/public/icons/icon-menu-hover.svg');
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                        img{
+                            display: none;
+                            position: absolute;
+                            bottom:0%;
+                            left: 0;
+                        }
                     }
                 }
             }
